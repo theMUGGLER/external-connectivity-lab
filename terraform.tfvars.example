@@ -1,0 +1,12 @@
+###############################################################################
+# terraform.tfvars.example
+# Copy to terraform.tfvars and fill in your values before running plan/apply.
+###############################################################################
+
+aws_region      = "us-east-1"
+environment     = "dev"
+project_name    = "hardened-ec2"
+key_name        = "hardened-ec2-key"
+
+# Replace with YOUR public IP — run: curl -s https://checkip.amazonaws.com && echo /32
+trusted_ip_cidr = "203.0.113.10/32"

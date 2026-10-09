@@ -1,0 +1,43 @@
+﻿# Terraform working data, state, plans, and deployment inputs
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.plan
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# Private keys and local credentials
+keys/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.env
+.env.*
+!.env.example
+.aws/
+.ssh/
+
+# Local tooling, evidence, and editor files
+.codex/
+.agents/
+.vscode/
+.idea/
+*.log
+*.pcap
+*.pcapng
+evidence/
+.DS_Store
+Thumbs.db
